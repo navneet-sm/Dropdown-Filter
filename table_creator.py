@@ -34,7 +34,8 @@ def read_excel_research(file):
     print(i_list)    
 
 def read_excel_publications(file):
-    publications_str = ""
+    a = 0
+    publications_str, yr, price = "", "", ""
     sno_list, n_list, a_list, y_list, c_list, p_list, l_list  = [], [], [], [], [], [], []
     pd.set_option('display.max_colwidth', None)
     publications_df = pd.read_excel(file, sheet_name=1)
@@ -47,21 +48,43 @@ def read_excel_publications(file):
     for _ in publications_df[['Author']].iterrows():
         a_list.append(str(_[1])[10:-23].rstrip('\n').replace('NaN', 'NA').rstrip('\nN'))
     for _ in publications_df[['Year']].iterrows():
-        y_list.append(str(_[1])[8:-23].rstrip('\n').replace('NaN', 'NA').rstrip('\nN'))
+        yr = str(_[1])[8:-23].rstrip('\n').replace('NaN', 'NA').rstrip('\nN')
+        if len(yr) != 6:
+            yr = 'NA'
+        else:
+            yr = yr.rstrip('.0')
+        if len(yr) == 3:
+            yr += '0'
+        y_list.append(yr)
     for _ in publications_df[['Category']].iterrows():
         c_list.append(str(_[1])[12:-23].rstrip('\n').replace('NaN', 'NA').rstrip('\nN'))
     for _ in publications_df[['Price']].iterrows():
-        p_list.append(str(_[1])[14:-23].rstrip('\n').replace('NaN', 'NA').rstrip('\nN'))
+        price = str(_[1])[14:-23].rstrip('\n').replace('NaN', 'NA').rstrip('\nN')
+        if len(price) == 0:
+            price = "NA"
+        p_list.append(price)
+        print(price)
     for _ in publications_df[['Download Link']].iterrows():
         l_list.append(str(_[1])[17:-23].rstrip('\n').replace('NaN', 'NA').rstrip('\nN'))
     publications_data = map(list, zip(sno_list ,n_list, a_list, y_list, c_list, p_list, l_list))
     for x in publications_data:
-        publications_str += "<tr>\n" + "    <td>" + x[0] + "</td>\n    <td class='title-td'>" + x[1] + "</td>\n    <td class='author-td'>" + x[2] + "</td>\n    <td class='year-td'>" + x[3] + "</td>\n    <td class='category-td'>"+ x[4] + "</td>\n    <td class='price-td'>" + x[5] + "</td>\n    <td class='download-td'><a href='" + x[6] + "'>Download</a></td>\n" + "\n</tr>\n"
+        if x[6] != 'NA':
+            if (a % 2) == 1: 
+                publications_str += "<tr class='alternate-tr'>\n" + "    <td class='sno'>" + x[0] + "</td>\n    <td class='title-td'>" + x[1] + "</td>\n    <td class='author-td'>" + x[2] + "</td>\n    <td class='year-td'>" + x[3] + "</td>\n    <td class='category-td'>"+ x[4] + "</td>\n    <td class='price-td'>" + x[5] + "</td>\n    <td class='download-td'><a href='" + x[6] + "'>Download</a></td>\n" + "\n</tr>\n"
+            else:
+                publications_str += "<tr>\n" + "    <td class='sno'>" + x[0] + "</td>\n    <td class='title-td'>" + x[1] + "</td>\n    <td class='author-td'>" + x[2] + "</td>\n    <td class='year-td'>" + x[3] + "</td>\n    <td class='category-td'>"+ x[4] + "</td>\n    <td class='price-td'>" + x[5] + "</td>\n    <td class='download-td'><a href='" + x[6] + "'>Download</a></td>\n" + "\n</tr>\n"
+            a += 1
+        else:
+            if (a % 2) == 1: 
+                publications_str += "<tr class='alternate-tr'>\n" + "    <td class='sno'>" + x[0] + "</td>\n    <td class='title-td'>" + x[1] + "</td>\n    <td class='author-td'>" + x[2] + "</td>\n    <td class='year-td'>" + x[3] + "</td>\n    <td class='category-td'>"+ x[4] + "</td>\n    <td class='price-td'>" + x[5] + "</td>\n    <td class='download-td'>NA</td>\n" + "\n</tr>\n"
+            else:
+                publications_str += "<tr>\n" + "    <td class='sno'>" + x[0] + "</td>\n    <td class='title-td'>" + x[1] + "</td>\n    <td class='author-td'>" + x[2] + "</td>\n    <td class='year-td'>" + x[3] + "</td>\n    <td class='category-td'>"+ x[4] + "</td>\n    <td class='price-td'>" + x[5] + "</td>\n    <td class='download-td'>NA</td>\n" + "\n</tr>\n"
+            a += 1
     with open('publications_table.html', 'w') as file:
         file.write(publications_str)    
 
 def read_excel_bulletins(file):
-    bulletins_str = ""
+    a, bulletins_str = 0, ""
     s_list, t_list, v_list, m_list, y_list, p_list, l_list = [], [], [], [], [], [], []
     pd.set_option('display.max_colwidth', None)
     publications_df = pd.read_excel(file, sheet_name=2)
@@ -91,4 +114,4 @@ def read_excel_bulletins(file):
     with open('bulletins_table.html', 'w') as file:
         file.write(bulletins_str)  
     
-read_excel_research('TRI_Research and Publications-Nov-30.xlsx')
+read_excel_publications('TRI_Research and Publications-Nov-30.xlsx')
