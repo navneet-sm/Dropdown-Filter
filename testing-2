@@ -1,0 +1,1518 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>Fixed table</title>
+</head>
+
+<body>
+<div>
+
+    <div class="outer-wrapper">
+    <div class="table-wrapper">
+    <table id="research-projects-table">
+        <thead>
+            <th col-index = 1>S.No</th>
+            <th col-index = 2>Title</th>
+            <th col-index = 3>Author</th>
+            <th col-index = 4>Year</th>
+            <th col-index = 5>Category</th>
+            <th col-index = 6>Price</th>
+            <th col-index = 7>Download</th>
+            <th col-index = 8 class='year-th'>Year &nbsp;
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all">Show All</option>
+                </select>
+            </th>
+	    <th col-index = 6>Price</th>
+            <th col-index = 7>Download Link</th>
+        </thead>
+        <tbody>
+           <tr>
+    <td class='sno'>1</td>
+    <td class='title-td'>Mundari - Hindi Sabdhkosh</td>
+    <td class='author-td'>Mrs. S. Prasad</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>6.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>2</td>
+    <td class='title-td'>Hindi - Mundari Sabdhkosh</td>
+    <td class='author-td'>Mrs. S. Prasad</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>10.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>3</td>
+    <td class='title-td'>Hindi - Kurukh Sabdhkosh</td>
+    <td class='author-td'>Mrs. S. Prasad</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>6.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>4</td>
+    <td class='title-td'>Kurukh - Hindi Sabdhkosh</td>
+    <td class='author-td'>Mrs. S. Prasad</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>12.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>5</td>
+    <td class='title-td'>Hindi - Santhali Sabdhkosh</td>
+    <td class='author-td'>Mrs. S. Prasad</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>50.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>6</td>
+    <td class='title-td'>Santhali - Hindi Sabdhkosh</td>
+    <td class='author-td'>Mrs. S. Prasad</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>50.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>7</td>
+    <td class='title-td'>Kharia Vartalap Nirdeshika</td>
+    <td class='author-td'>Mrs. S. Prasad</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>15.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>8</td>
+    <td class='title-td'>Korwa Vartalap Nirdeshika</td>
+    <td class='author-td'>Mrs. S. Prasad</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>15.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1zv0XQ27WisQciljeb6HvrRxgcNo0Rmvn&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>9</td>
+    <td class='title-td'>Birhor Vartalap Nirdeshika</td>
+    <td class='author-td'>Mrs. S. Prasad</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>15.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1MQ4_F0emw6stHPTxKcCFjqCJMpllfiqW&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>10</td>
+    <td class='title-td'>Asuri Vartalap Nirdeshika</td>
+    <td class='author-td'>Mrs. S. Prasad</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>15.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=14zWurj-Cks0XLdHx2fEKKThvj7EZL8pZ&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>11</td>
+    <td class='title-td'>Malto Vartalap Nirdeshika</td>
+    <td class='author-td'>Mrs. S. Prasad</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>15.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1ywyU3v-z6jiX0nWPA-F4Pzwzt9IMHqqm&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>12</td>
+    <td class='title-td'>Bhumij Vartalap Nirdeshika</td>
+    <td class='author-td'>Mrs. S. Prasad</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>15.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1SE9pFGYIIfHFf0swdZXCyxDX00kkE8E&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>13</td>
+    <td class='title-td'>Nagpuri Vartalap Nirdeshika</td>
+    <td class='author-td'>Mrs. S. Prasad</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>15.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>14</td>
+    <td class='title-td'>Mundari Vartalap Nirdeshika</td>
+    <td class='author-td'>Mrs. S. Prasad</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>15.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>15</td>
+    <td class='title-td'>Ho Vartalap Nirdeshika</td>
+    <td class='author-td'>Mrs. S. Prasad</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>15.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>16</td>
+    <td class='title-td'>Oraon</td>
+    <td class='author-td'>Dr. Prakash Chandra Oraon</td>
+    <td class='year-td'>1993.0</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>30.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1i3myOokouPQDpW3kYghXrJiI6TEqe35w&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>17</td>
+    <td class='title-td'>Asur</td>
+    <td class='author-td'>Rajeshwari Prasad Singh</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>20.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1yOA25e3RLYY1OZX5avB-xao1EbH4xhhW&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>18</td>
+    <td class='title-td'>Korwa</td>
+    <td class='author-td'>Hari Mohan</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>20.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1OyUeg7kzo2jEtqmRQAIuU08Nakp8SFch&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>19</td>
+    <td class='title-td'>Munda</td>
+    <td class='author-td'>Soma Singh Munda</td>
+    <td class='year-td'>1993.0</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>25.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1X0HuDDqpvr5XVVltscYHN0WeSJoA_g9V&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>20</td>
+    <td class='title-td'>Lohra</td>
+    <td class='author-td'>Prof. H. R. Naumani</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>20.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1X0HuDDqpvr5XVVltscYHN0WeSJoA_g9V&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>21</td>
+    <td class='title-td'>Birjia</td>
+    <td class='author-td'>Vijal Mahto</td>
+    <td class='year-td'>1993.0</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>20.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1dSdozyWjWDwk72VoEi_paxxVTQHQLAH9&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>22</td>
+    <td class='title-td'>Kharia Vartalap Nirdeshika</td>
+    <td class='author-td'>Mrs. S. Prasad</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>20.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=179GhFFkMJikSFxweJZhLpd_WkZ-H7Fzl&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>23</td>
+    <td class='title-td'>Santhal</td>
+    <td class='author-td'>Umesh Kumar Verma</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>20.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=13ndlNQtfNHEG_JrCvI9hij-dsMiuu-Xr&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>24</td>
+    <td class='title-td'>Mal Paharia</td>
+    <td class='author-td'>Kirti Vikram</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>20.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1suYzPq2kbIgvDO9yl0_qHRKQmsNWRP90&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>25</td>
+    <td class='title-td'>Jharkhand ke Asur </td>
+    <td class='author-td'>Dr. Prakash Chandra Oraon</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>30.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1md7QvkdryhHSoSTrmxrncbqYP9nIeSbr&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>26</td>
+    <td class='title-td'>Jharkhand ke Birhor</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>45.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1pleDkINRKkZ3yGPONJs_RBiINrbXq_6v&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>27</td>
+    <td class='title-td'>Bihar ke Bedia</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>45.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1IqaJ06jEEpwQBGrGwSrv_0u9ou80zJz&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>28</td>
+    <td class='title-td'>The Parhaiyas of Palamu</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>45.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1UqhcpdRbU4tQjlUMXlY9L4S7SSEGpHYg&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>29</td>
+    <td class='title-td'>Tribal Customs and Laws</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Customs and Laws</td>
+    <td class='price-td'>50.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>30</td>
+    <td class='title-td'>Hill Kharia Sabar</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>70.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1OUUaPlxJMVqpnnisFWGIMlgAmTxNvFza&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>31</td>
+    <td class='title-td'>Monographic Study of Kora Tribal Community</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>60.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=11dWLLMFNXyuRP9vu2LSBCp8BIZvSDtoJ&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>32</td>
+    <td class='title-td'>Kharwar</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>205.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1B7Hv24_WJA0Pzr6V2wx7VElqvbVoUikQ&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>33</td>
+    <td class='title-td'>Baiga</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>50.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1cDZGzScFZpKmzTFDDbN3TzmAsBJJ-6-v&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>34</td>
+    <td class='title-td'>Janjatiya Chetra Me Dayan Pratha Ki Samasy Evam Samadhan</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>100.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=10FWdEnTf7yMYj3BS3OtlN4qipqz8fSh1&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>35</td>
+    <td class='title-td'>Karmali</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>50.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1lkyCO-shAHW6XIiHSETIpDox37RziUVk&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>36</td>
+    <td class='title-td'>Jadi Booti</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Customs and Laws</td>
+    <td class='price-td'>100.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>37</td>
+    <td class='title-td'>A Report on the wilkinsoxs Rule in Kolhan</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Customs and Laws</td>
+    <td class='price-td'>25.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=17JEI7eP90mw4KLs_yvn7xkeByUFmq3SI&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>38</td>
+    <td class='title-td'>PVTG Survey Report</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>002-03-01
+Name: 37</td>
+    <td class='category-td'>Economy and Government's Provisions</td>
+    <td class='price-td'>1000.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>39</td>
+    <td class='title-td'>Chotanagpur Evam Santhal Pargana Kastakari Adhiniyam</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Customs and Laws</td>
+    <td class='price-td'>100.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1lUTUXM6uIA1C5pFwoRS17hfgK60yYR0K&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>40</td>
+    <td class='title-td'>Land & People of Jharkhand </td>
+    <td class='author-td'>Dr. P.C. Oraon</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>100.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=10yIERO58oIrvnXYWeFy-mDTbyItQjjvx&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>41</td>
+    <td class='title-td'>Life & Times of Birsa Bhagwan and 1964</td>
+    <td class='author-td'>Dr. S.P. Sinha</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal History</td>
+    <td class='price-td'>55.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>42</td>
+    <td class='title-td'>The Problem of Land Alienation of the Tribals in and around Ranchi</td>
+    <td class='author-td'>Dr. S.P. Sinha</td>
+    <td class='year-td'>1955-65</td>
+    <td class='category-td'>Economy and Government's Provisions</td>
+    <td class='price-td'>5.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>43</td>
+    <td class='title-td'>Impact of Industrialisation on Bihar, Tribal </td>
+    <td class='author-td'>Dr. N. Prasad</td>
+    <td class='year-td'>1961.0</td>
+    <td class='category-td'>Economy and Government's Provisions</td>
+    <td class='price-td'>3.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=11j8ob-t-jr2o3l8NU-_8qNeQNMxWHHYi&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>44</td>
+    <td class='title-td'>Tribes of Chotanagpur Plateau : An Ethno-Nutritional & Pharmacological Cross-Section</td>
+    <td class='author-td'>Dr. S.P. Gupta</td>
+    <td class='year-td'>1974.0</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>20.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>45</td>
+    <td class='title-td'>The Asur : Etno-Biological Profile,  Dr. S.P. Gupta</td>
+    <td class='author-td'>Dr. S.P. Gupta</td>
+    <td class='year-td'>1976.0</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>20.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>46</td>
+    <td class='title-td'>The Chero : A study in acculturation</td>
+    <td class='author-td'>Hari Mohan</td>
+    <td class='year-td'>1973.0</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>3.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1mmyCsKlS3ZM8yrncLZTYl_112eK2FTLi&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>47</td>
+    <td class='title-td'>The Parhaiya : A Study in Culture Change</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>1975.0</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>15.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1l26UUnit5JR2cTdRWCSP5zEDbWHBprtU&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>48</td>
+    <td class='title-td'>Bhartiya Samaj me Janjatigan (In Hindi)</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>3.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>49</td>
+    <td class='title-td'>Tribals of Dhanbad</td>
+    <td class='author-td'>S.N. Roy</td>
+    <td class='year-td'>1982.0</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>10.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1KGmi7SccjJmOIv4vL_aRnm1YUgwQfz89&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>50</td>
+    <td class='title-td'>A Study on Migrant Women Workers </td>
+    <td class='author-td'>S.N. Roy</td>
+    <td class='year-td'>1982.0</td>
+    <td class='category-td'>Economy and Government's Provisions</td>
+    <td class='price-td'>100.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1v5dwyz6nv5W5BAGIuxfpEIP9Pn6IsqBe&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>51</td>
+    <td class='title-td'>Santhal Hul - Dr. S.P. Sinha</td>
+    <td class='author-td'>Dr. S.P. Sinha</td>
+    <td class='year-td'>1990.0</td>
+    <td class='category-td'>Tribal History</td>
+    <td class='price-td'>25.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>52</td>
+    <td class='title-td'>Paper relating to Santhal-Hul</td>
+    <td class='author-td'>Dr. S.P. Sinha</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal History</td>
+    <td class='price-td'>25.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=15YIm-fuT3UEuWSzgYoM-kqiZxoQ7eNby&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>53</td>
+    <td class='title-td'>Birsa Bhagwan ( Bangla)</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Miscellenious</td>
+    <td class='price-td'>70.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>54</td>
+    <td class='title-td'>Juri Khatir (Gayan)</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Miscellenious</td>
+    <td class='price-td'>13.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1eppbfuGyKfVrwdFustQvjHS8xxYwHWI2&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>55</td>
+    <td class='title-td'>Tiri (2)</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>10.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>56</td>
+    <td class='title-td'>Santal Porgona Ren Hopanes</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>19.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=10t0pASF00yw0TO0CCkepH04sv1dDqe5f&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>57</td>
+    <td class='title-td'>Ho Ko Odo Nekowang Dishum</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>11.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=17hGVWJDy4EtywemgK5cQN1PQcPVUNOwM&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>58</td>
+    <td class='title-td'>Shoorvir Birsa</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>11.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>59</td>
+    <td class='title-td'>Akhda Nindaye Gelak</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>11.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>60</td>
+    <td class='title-td'>Jujhayir Dand</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>9.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1FYvcTDK9JqmxUbvCrWlLw_Ce7fVgYyX4&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>61</td>
+    <td class='title-td'>Kharia Nibandh Sangrah</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>12.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>62</td>
+    <td class='title-td'>Kharia Kavita Sangrah Evam Lok Kathaye</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>12.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1n21cx6YFTzShRszbWRscSgfWOWlgmPOt&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>63</td>
+    <td class='title-td'>Lodro Somdhi Kahani Sangrah</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>10.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1wGY2NWvGyqkSu85CNiFZRH9yBdib6E62&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>64</td>
+    <td class='title-td'>Sinkoy Sulo-o Bhasha Sahitya Patra</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>10.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=10Z17-O_zKWYfvoyhDUlz0SL3t2N751og&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>65</td>
+    <td class='title-td'>Karia Gadya-Padya Sangrah (Bhasha Sahitya)</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>13.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>66</td>
+    <td class='title-td'>Ravanbadh</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>12.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>67</td>
+    <td class='title-td'>Panch Parganiya Bhasha</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>14.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>68</td>
+    <td class='title-td'>Jivan Pathek Phool (Panch Parganya Jeet Kavita Sangrah)</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>13.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1ljDl4cdYAYty2t-T289CykcgtZUywL3g&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>69</td>
+    <td class='title-td'>Kortha Nibhand</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>60.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1CbtMt4lbBmNkHfOwiJleeseMB34XrHej&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>70</td>
+    <td class='title-td'>Sondh Maati (Kortha Kahani Evam Kavita Sangrah)</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>60.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>71</td>
+    <td class='title-td'>Nagpuri Lok Katha</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>35.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1h1YGHjzPel5Dad3kkyu9a5YjGNmij5BQ&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>72</td>
+    <td class='title-td'>Onto Baha Mala</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>35.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>73</td>
+    <td class='title-td'>Gyantu Aar Marsaal (Kahani Puthi)</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>35.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>74</td>
+    <td class='title-td'>Kathni Baha Mala</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>30.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>75</td>
+    <td class='title-td'>Baha Sohrai</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>20.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1eoa9NQkqpjgmTJzOR_sd_V0r0zBJlvnx&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>76</td>
+    <td class='title-td'>Sindri (Novel in Kurukh Language)</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>18.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1siLWAlaaRbumlhYkJNZs8enr1s9VmdeZ&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>77</td>
+    <td class='title-td'>Hod Seray</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>35.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1-SqHmcS7ukmSuSRbtO8qrQnHC64F1l4z&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>78</td>
+    <td class='title-td'>Kurukh Katath-Khiri Aradandi</td>
+    <td class='author-td'>I. A. Jokha</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>30.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1duxfZjA60eGhYGM3QehyovJc0ybm-LG0&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>79</td>
+    <td class='title-td'>Kurukh Katath-Khiri Aradandi</td>
+    <td class='author-td'>I. A. Jokha</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>70.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1duxfZjA60eGhYGM3QehyovJc0ybm-LG0&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>80</td>
+    <td class='title-td'>Katath Khiri</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>70.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1gBxTUQ8GQPDj_ZjpA4Cucm_rR84F71DJ&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>81</td>
+    <td class='title-td'>Katath Sor</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>80.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1ClXqVg_OWU0nkqjEIpHZqmKgA7cT3g-Q&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>82</td>
+    <td class='title-td'>Kudukh Katath-Khiri Aradandi (I A Jokha)</td>
+    <td class='author-td'>I. A. Jokha</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>80.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>83</td>
+    <td class='title-td'>Nagpuri Lok Sahitya</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>111.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1dbPkvOLcfBgRM5c1jRP6xYg55Lcdp9T8&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>84</td>
+    <td class='title-td'>Santali Lok Sahitya</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>165.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1GfXfQ85y6Hno05zCAwDS1Tg5ttm8r_QU&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>85</td>
+    <td class='title-td'>Kharia Lok Sahitya</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>185.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1k0GWOy4rQjtoMhmPMB1RsCh_CiSOy-yW&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>86</td>
+    <td class='title-td'>Panch Parganiya Lok Sahitya</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>165.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1k_Lyu0clzAC_aDCWpdEF9RDuczylUNuw&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>87</td>
+    <td class='title-td'>Kortha Lok Sahitya</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>149.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1y5oMpH2i3UmHsT6hS6Upe2nrS-CWTkrQ&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>88</td>
+    <td class='title-td'>Kurukh Lok Sahitya</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>169.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>89</td>
+    <td class='title-td'>Kurmali Lok Sahitya</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>116.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>90</td>
+    <td class='title-td'>Anayum Durang (Mundari folk song)</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>223.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1F6FYwVw8Occbxbu6TnwwTf354IF_7m2a&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>91</td>
+    <td class='title-td'>Ho Lok Katha</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>78.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>92</td>
+    <td class='title-td'>Lodro Somdhi Kahani Sangrah</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>200.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>93</td>
+    <td class='title-td'>Jharkhand Ke Aadiwasi</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal History</td>
+    <td class='price-td'>350.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1bB4fPUMeJMyRLTgWLgoGz52CM_r5hcXn&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>94</td>
+    <td class='title-td'>Tribal Atlas</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Economy and Government's Provisions</td>
+    <td class='price-td'>1150.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=13FA-YPDwlUEOA4PuJUxKDT0F2q9REQZ0&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>95</td>
+    <td class='title-td'>Amar Shahid Fatel Singh Kharwar</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal History</td>
+    <td class='price-td'>75.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1m_luM4W9F1B11ZqAQIfT3xl8YqrSsNoj&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>96</td>
+    <td class='title-td'>Amar Shahid Pandey Ganpat Rai</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal History</td>
+    <td class='price-td'>75.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1LwbKfQf0WKVUQo7Yyn8dYtIpH0zR_sVP&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>97</td>
+    <td class='title-td'>Nilambar - Pitambar</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal History</td>
+    <td class='price-td'>55.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1szQJ64HZGLev0tsZUwW_YdCMTg0qkEeB&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>98</td>
+    <td class='title-td'>Sondh Maati (Kortha Kahani Evam Kavita Sangrah)</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal History</td>
+    <td class='price-td'>60.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1pZFMw3zXgFi-Co1mfy4D18vNxewJo2MP&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>99</td>
+    <td class='title-td'>Nagpuri Lok Katha</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>35.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>100</td>
+    <td class='title-td'>Onto Baha Mala</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>35.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1Tx2RZQGldeGA3TtYv89iGnuyC0W-21FN&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>101</td>
+    <td class='title-td'>Gyantu Aar Marsaal (Kahani Puthi)</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>30.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>102</td>
+    <td class='title-td'>Kathni Baha Mala</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>20.00</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1X0NKcp6fULP6vCpIyYJ1VarKo5keF8Ys&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>103</td>
+    <td class='title-td'>Baha Sohrai</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>18.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>104</td>
+    <td class='title-td'>Sindri (Novel in Kurukh Language)</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>35.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>105</td>
+    <td class='title-td'>Hod Seray</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>45.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>106</td>
+    <td class='title-td'>Kurukh Katath-Khiri Aradandi</td>
+    <td class='author-td'>I. A. Jokha</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>30.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>107</td>
+    <td class='title-td'>Kurukh Katath-Khiri Aradandi</td>
+    <td class='author-td'>I. A. Jokha</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>70.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>108</td>
+    <td class='title-td'>Katath Khiri</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>70.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>109</td>
+    <td class='title-td'>Katath Sor</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>80.00</td>
+    <td class='download-td'><a href='NA'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>110</td>
+    <td class='title-td'>PRIMITIVE TRIBAL GROUPS OF JHARKHAND SURVEY REPORT (2002-03) final</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Economy and Government's Provisions</td>
+    <td class='price-td'>N/A</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1889grWx0liVN-vLB6ES8PTaml5kNN2B7&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>111</td>
+    <td class='title-td'>SAURIA PAHARIA OF RAJMAHAL HILLS</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>50</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1bpJnnw_oqKN-IiNG-UDQwwNQM1tA6P0h&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>112</td>
+    <td class='title-td'>THE CUSTOMARY LAWS OF THE MUNDA & THE ORAO</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Language and Literature</td>
+    <td class='price-td'>300</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1bZSfTEAR7S3zj1EWMVMfYW8Eg-7ZsP7b&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>113</td>
+    <td class='title-td'>Aadim Janjatiyan</td>
+    <td class='author-td'>C. Lalsota</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>50</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1Uy54xq6AncjUcJVECv4ntYcxz-iSk-w7&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>114</td>
+    <td class='title-td'>Sauria Paharia OF RAJMAHAL HILLS</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal Anthropology</td>
+    <td class='price-td'>50</td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1JagVQALilydNXPIKN_2cdVH-FuWol0Zn&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>115</td>
+    <td class='title-td'>Tribal and Folk Paintings of India </td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>NA</td>
+    <td class='price-td'></td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=11hegPTpm75RGVuwdEd9LQVzmfkIskGD2&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>116</td>
+    <td class='title-td'>Panchvi Anusuchi Bitar Re Ilaka Odo: Raizpait</td>
+    <td class='author-td'>NA</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>NA</td>
+    <td class='price-td'></td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1HgIIgFtr_jpI7QeahPYXr6ynDxzjCdKG&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>117</td>
+    <td class='title-td'>Veer Shaheed Telanga Kharia</td>
+    <td class='author-td'>Dr. Sushil Kerketta</td>
+    <td class='year-td'>NA</td>
+    <td class='category-td'>Tribal History</td>
+    <td class='price-td'></td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=12_cb28vwVotWvyHyHqAI7o8MbGvfcC3h&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>118</td>
+    <td class='title-td'>Amar Shaheed Shekh Bhikhari</td>
+    <td class='author-td'>Dr. Saabir Hussain</td>
+    <td class='year-td'>2020.0</td>
+    <td class='category-td'>Tribal History</td>
+    <td class='price-td'></td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=19XqJgvYYIY5SwpOKOVrO-JTMiF4zbagr&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>119</td>
+    <td class='title-td'>Laghuvan Padarth Evam Aushadhiya Jadi Bootiyan</td>
+    <td class='author-td'>Kriti Vikram</td>
+    <td class='year-td'>2020.0</td>
+    <td class='category-td'>NA</td>
+    <td class='price-td'></td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1iuz0QeFUlmKpNNtu0Xksd8KWJakLmPw-&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>120</td>
+    <td class='title-td'>Asur Bhakha</td>
+    <td class='author-td'>Sushma Asur and Yogeshwar Asur</td>
+    <td class='year-td'>2021.0</td>
+    <td class='category-td'>NA</td>
+    <td class='price-td'></td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1QRpDpiCKY_Q7LXDqxOKRzp8mplBApy5i&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>121</td>
+    <td class='title-td'>Sera Durang (Janjatiya Mahila Visheshank)</td>
+    <td class='author-td'>Sushma Asur and Yogeshwar Asur</td>
+    <td class='year-td'>2019.0</td>
+    <td class='category-td'>NA</td>
+    <td class='price-td'></td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1E6g6IrwONuSYrb01VOXWTQkZvos7ugpn&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>122</td>
+    <td class='title-td'>Lako Bodra</td>
+    <td class='author-td'>Shri Kamal Lochan Kodha 'Ho'</td>
+    <td class='year-td'>2019.0</td>
+    <td class='category-td'>NA</td>
+    <td class='price-td'></td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1QfDMFBMUYqKM8uePPQSzMoXBh3M6RQIz&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>123</td>
+    <td class='title-td'>Amar Shaheed Gaya Munda</td>
+    <td class='author-td'>Dr. Subash Chandra Munda</td>
+    <td class='year-td'>2020.0</td>
+    <td class='category-td'>NA</td>
+    <td class='price-td'></td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1i6v2ycUhtQpYzvnFBeSSLfUZYrbgAViH&export=download'>Download</a></td>
+
+</tr>
+<tr>
+    <td class='sno'>124</td>
+    <td class='title-td'>Panchvi Anusuchi Bitar re Ilaka Odo</td>
+    <td class='author-td'>(Interpreter) Soma Singh Munda</td>
+    <td class='year-td'>2020.0</td>
+    <td class='category-td'>NA</td>
+    <td class='price-td'></td>
+    <td class='download-td'><a href='https://drive.google.com/uc?id=1HgIIgFtr_jpI7QeahPYXr6ynDxzjCdKG&export=download'>Download</a></td>
+
+</tr>
+
+        </tbody>
+    </table>
+	</div>
+	</div>
+</body>
+</html>
+<style>
+  * {
+    margin: 0px;
+    padding: 0;
+}
+
+.heading {
+    display: flex;
+    background-color: #232f3e;
+    box-shadow: 0px 1px 2px #232f3e;
+
+}
+h1 {
+    color: coral;
+    font-weight: bold;
+    background: transparent;
+    padding: 4px;
+    
+}
+
+
+.outer-wrapper {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+    max-width: fit-content;
+    max-height: fit-content;
+
+    
+}
+.table-wrapper {
+
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: fit-content;
+    max-height: 150vh;
+    
+    margin-top: 0px;
+    
+    margin: 0px;
+    padding-bottom: 0px;
+    
+}
+
+
+table {
+    
+    min-width: max-content;
+    
+    border-collapse: separate;
+    border-spacing: 0px;    
+    
+}
+
+.table-filter {
+    border-radius: 0px;
+    font-family: Montserrat;
+		font-size: calc(0.5rem + 0.5vw);
+    line-height: 2.0;
+}
+
+table th{
+    position: sticky; 
+    top: 0px;
+    background-color: #3f3833;
+    color: white;
+    font-family: Montserrat;
+    text-align: center;
+    font-weight: normal;
+    font-size: calc(0.7rem + 0.7vw);
+    outline: 0.7px solid black;
+    border: 1.5px solid black;
+    height: 3rem;
+    letter-spacing: 1.0;
+    padding: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  	font-size: calc(0.5rem + 0.5vw);
+    height: 3rem;
+  } 
+
+table td {
+    text-align: left;
+    font-family: Montserrat;
+    font-size: calc(0.5rem + 0.5vw);
+    padding-left: 1.5rem;
+    line-height: 1.6;
+    padding: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  	font-size: calc(0.5rem + 0.5vw);
+    height: 4rem;
+}
+
+.title-td {
+    max-width: calc(19rem + 19vw);
+    font-size: calc(0.5rem + 0.5vw);
+}
+.volume-td {
+  max-width: calc(6rem + 6vw);
+  font-size: calc(0.5rem + 0.5vw);
+  }
+.month-td {
+  max-width: auto;
+  font-size: calc(0.5rem + 0.5vw);;
+  }
+.year-td{
+  max-width: auto;
+  font-size: calc(0.5rem + 0.5vw);;
+  }
+.price-td {
+  max-width: auto;
+  font-size: calc(0.5rem + 0.5vw);;
+  }
+.download-td {
+   max-width: auto;
+  font-size: calc(0.5rem + 0.5vw);;
+  }
+ .sno {
+   width: 5rem;
+   background-color: #00f95b;
+   color: white;
+   font-weight: 500;
+   font-size: 0.9rem;
+  }
+ .alternate-tr {
+   background-color: #f9f9f9;
+  }
+  </style>
+<script>
+getUniqueValuesFromColumn()
+function getUniqueValuesFromColumn() {
+
+    var unique_col_values_dict = {}
+
+    allFilters = document.querySelectorAll(".table-filter")
+    allFilters.forEach((filter_i) => {
+        col_index = filter_i.parentElement.getAttribute("col-index");
+        // alert(col_index)
+        const rows = document.querySelectorAll("#research-projects-table > tbody > tr")
+
+        rows.forEach((row) => {
+            cell_value = row.querySelector("td:nth-child("+col_index+")").innerHTML;
+            // if the col index is already present in the dict
+            if (col_index in unique_col_values_dict) {
+
+                // if the cell value is already present in the array
+                if (unique_col_values_dict[col_index].includes(cell_value)) {
+                    // alert(cell_value + " is already present in the array : " + unique_col_values_dict[col_index])
+
+                } else {
+                    unique_col_values_dict[col_index].push(cell_value)
+                    // alert("Array after adding the cell value : " + unique_col_values_dict[col_index])
+
+                }
+
+
+            } else {
+                unique_col_values_dict[col_index] = new Array(cell_value)
+            }
+        });
+
+        
+    });
+
+
+    updateSelectOptions(unique_col_values_dict)
+
+};
+
+// Add <option> tags to the desired columns based on the unique values
+
+function updateSelectOptions(unique_col_values_dict) {
+    allFilters = document.querySelectorAll(".table-filter")
+
+    allFilters.forEach((filter_i) => {
+        col_index = filter_i.parentElement.getAttribute('col-index')
+
+        unique_col_values_dict[col_index].forEach((i) => {
+            filter_i.innerHTML = filter_i.innerHTML + `\n<option value="${i}">${i}</option>`
+        });
+
+    });
+};
+
+
+// Create filter_rows() function
+
+// filter_value_dict {2 : Value selected, 4:value, 5: value}
+
+function filter_rows() {
+    allFilters = document.querySelectorAll(".table-filter")
+    var filter_value_dict = {}
+
+    allFilters.forEach((filter_i) => {
+        col_index = filter_i.parentElement.getAttribute('col-index')
+
+        value = filter_i.value
+        if (value != "all") {
+            filter_value_dict[col_index] = value;
+        }
+    });
+
+    var col_cell_value_dict = {};
+
+    const rows = document.querySelectorAll("#research-projects-table tbody tr");
+    rows.forEach((row) => {
+        var display_row = true;
+
+        allFilters.forEach((filter_i) => {
+            col_index = filter_i.parentElement.getAttribute('col-index')
+            col_cell_value_dict[col_index] = row.querySelector("td:nth-child(" + col_index+ ")").innerHTML
+        })
+
+        for (var col_i in filter_value_dict) {
+            filter_value = filter_value_dict[col_i]
+            row_cell_value = col_cell_value_dict[col_i]
+            
+            if (row_cell_value.indexOf(filter_value) == -1 && filter_value != "all") {
+                display_row = false;
+                break;
+            }
+
+
+        }
+
+        if (display_row == true) {
+            row.style.display = "table-row"
+
+        } else {
+            row.style.display = "none"
+
+        }
+    })
+}
+</script>
