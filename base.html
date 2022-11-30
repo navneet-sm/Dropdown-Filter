@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
     <link rel="stylesheet" href="./css_final.css">
     
     <script src="./filter.js"></script>
@@ -15,32 +16,38 @@
 </head>
 
 <body>
-    <div class="heading">
-    <h1>Dropdown table filter using JavaScript</h1>
     <!-- <button id="get-unique-values" onclick="getUniqueValuesFromColumn()">Get unique column values</button> -->
 </div>
     <div class="outer-wrapper">
     <div class="table-wrapper">
-    <table id="emp-table">
+    <table id="research-projects-table">
         <thead>
-            <th col-index = 1>Employee ID</th>
-            <th col-index = 2>Gender
+            <th col-index = 1>S No.</th>
+            <th col-index = 2>Name of Project</th>
+            <th col-index = 3>FY
                 <select class="table-filter" onchange="filter_rows()">
                     <option value="all"></option>
                 </select>
             </th>
 
-            <th col-index = 3>Department
+            <th col-index = 4>Funding
                 <select class="table-filter" onchange="filter_rows()">
                     <option value="all"></option>
                 </select>
             </th>
-            <th col-index = 4>Status
+            <th col-index = 5>Budget<br>(Rs.in Lakh)</th>
+            <th col-index = 6>Institution</th>
+            <th col-index = 7>Category
                 <select class="table-filter" onchange="filter_rows()">
                     <option value="all"></option>
                 </select>
             </th>
-            <th col-index = 5>Office
+            <th col-index = 8>Status
+                <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+            </th>
+            <th col-index = 9>Project Complete
                 <select class="table-filter" onchange="filter_rows()">
                     <option value="all"></option>
                 </select>
@@ -49,91 +56,754 @@
         </thead>
         <tbody>
             <tr>
-                <td>101</td>
-                <td>M</td>
-                <td>RnD</td>
-                <td>Online</td>
-                <td>Site 1</td>
+                <td>1</td>
+                <td class='name-td'>Ethnography of 8 PVTG of Jharkhand</td>
+                <td>NA</td>
+                <td>MoTA</td>
+                <td>20.0</td>
+                <td class='institution-td'>Central University, Jharkhand</td>
+                <td>Anthropological Studies</td>
+                <td>Initiated</td>
+                <td>NA
             </tr>
             <tr>
-                <td>102</td>
-                <td>M</td>
-                <td>RnD</td>
-                <td>On Leave</td>
-                <td>Site 1</td>
+                <td>2</td>
+                <td class='name-td'>Research Study on Human Trafficking in Jharkhand</td>
+                <td>2018-19</td>
+                <td>MoTA</td>
+                <td>9.63</td>
+                <td class='institution-td'>Bhartiya Kisan Sangh, Ranchi</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>Draft Report Received</td>
+                <td>NA
             </tr>
             <tr>
-                <td>103</td>
-                <td>F</td>
-                <td>RnD</td>
-                <td>Online</td>
-                <td>Site 1</td>
+                <td>3</td>
+                <td class='name-td'>Evaluation-Utilization of TSP Funds for 2015-16, 2016-17 & 2017-18</td>
+                <td>2018-19</td>
+                <td>MoTA</td>
+                <td>10.0</td>
+                <td class='institution-td'>Vinoba Bhave University, Hazaribagh</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>Final Report Received</td>
+                <td>NA
             </tr>
             <tr>
-                <td>104</td>
-                <td>F</td>
-                <td>Engineering</td>
-                <td>Online</td>
-                <td>Site 1</td>
+                <td>4</td>
+                <td class='name-td'>Evaluation Study of JTELP</td>
+                <td>2018-19</td>
+                <td>MoTA</td>
+                <td>6.0</td>
+                <td class='institution-td'>Ram Krishna Mission, Ranchi</td>
+                <td>Anthropological Studies</td>
+                <td>Draft Report Received</td>
+                <td>NA
             </tr>
             <tr>
-                <td>201</td>
-                <td>F</td>
-                <td>Engineering</td>
-                <td>On Leave</td>
-                <td>Site 2</td>
+                <td>5</td>
+                <td class='name-td'>Compendium of Tribal Medicinal Practices - Santhal, Munda and Oraon (2 years)</td>
+                <td>2018-19</td>
+                <td>MoTA</td>
+                <td>15.0</td>
+                <td class='institution-td'>ANSISS, Patna</td>
+                <td>Tribal Art and Culture</td>
+                <td>Second Progress Report Received</td>
+                <td>NA
             </tr>
             <tr>
-                <td>202</td>
-                <td>F</td>
-                <td>Engineering</td>
-                <td>Online</td>
-                <td>Site 2</td>
+                <td>6</td>
+                <td class='name-td'>Archival, non archival and oral source based compilation and analysis of Bir Budhu Bhagat and revolt of 1831-32</td>
+                <td>2018-19</td>
+                <td>MoTA</td>
+                <td>4.4</td>
+                <td class='institution-td'>Central University, Jharkhand</td>
+                <td>Historical Studies</td>
+                <td>First Progress Report Received</td>
+                <td>NA
             </tr>
             <tr>
-                <td>203</td>
-                <td>M</td>
-                <td>Engineering</td>
-                <td>Online</td>
-                <td>Site 2</td>
+                <td>7</td>
+                <td class='name-td'>Santal Hul</td>
+                <td>2018-19</td>
+                <td>MoTA</td>
+                <td>4.4</td>
+                <td class='institution-td'>Ranchi University, Ranchi</td>
+                <td>Historical Studies</td>
+                <td>Initiated</td>
+                <td>NA
             </tr>
             <tr>
-                <td>204</td>
-                <td>M</td>
-                <td>Design</td>
-                <td>Online</td>
-                <td>Site 2</td>
+                <td>8</td>
+                <td class='name-td'>Archival, non archival and oral sources based compilaton and analysis on "Santal Pargana (Damin-i-Kah) from 1765 to 1853 before Santal Hul (East India Company in Bhagalpur-Importance of Rajmahal in governance of East India Company-Permanent Settlement-Paharia Revolt-Myth of Tilka Manjhi (Jabra Paharia)-Extension of Railways</td>
+                <td>2018-19</td>
+                <td>MoTA</td>
+                <td>4.4</td>
+                <td class='institution-td'>Bhairav Ganguli College, Kolkata</td>
+                <td>Historical Studies</td>
+                <td>Final Draft Report Received</td>
+                <td>NA
             </tr>
             <tr>
-                <td>301</td>
-                <td>F</td>
-                <td>Support</td>
-                <td>Online</td>
-                <td>Site 3</td>
+                <td>9</td>
+                <td class='name-td'>Jaipal Singh Munda</td>
+                <td>2018-19</td>
+                <td>MoTA</td>
+                <td>4.4</td>
+                <td class='institution-td'>JNU, New Delhi</td>
+                <td>Historical Studies</td>
+                <td>Final Draft Report Received</td>
+                <td>NA
             </tr>
             <tr>
-                <td>302</td>
-                <td>F</td>
-                <td>Support</td>
-                <td>Online</td>
-                <td>Site 3</td>
+                <td>10</td>
+                <td class='name-td'>Tamar Revolt</td>
+                <td>2018-19</td>
+                <td>MoTA</td>
+                <td>4.4</td>
+                <td class='institution-td'>Dr. Susmita Mukhargee College, WB</td>
+                <td>Historical Studies</td>
+                <td>Second Progress Report Received</td>
+                <td>NA
             </tr>
             <tr>
-                <td>303</td>
-                <td>M</td>
-                <td>Support</td>
-                <td>Terminated</td>
-                <td>Site 3</td>
+                <td>11</td>
+                <td class='name-td'>Documentary: MalPaharia,Sauria Paharia ,Pahariya,Banjara and Khond depicting their cultures,customs,festivals and traditions</td>
+                <td>2018-19</td>
+                <td>MoTA</td>
+                <td>NA</td>
+                <td class='institution-td'>Aloka Bharati</td>
+                <td>Documentry</td>
+                <td>Draft Report Received</td>
+                <td>NA
             </tr>
             <tr>
-                <td>304</td>
-                <td>M</td>
-                <td>Support</td>
-                <td>On Leave</td>
-                <td>Site 3</td>
+                <td>12</td>
+                <td class='name-td'>Documentary: MalPaharia,Sauria Paharia ,Pahariya,Banjara and Khond depicting their cultures,customs,festivals and traditions</td>
+                <td>2018-19</td>
+                <td>MoTA</td>
+                <td>NA</td>
+                <td class='institution-td'>Indigenous People</td>
+                <td>Documentry</td>
+                <td>Draft Report Received</td>
+                <td>NA
             </tr>
-            
-
+            <tr>
+                <td>13</td>
+                <td class='name-td'>Documentary: MalPaharia,Sauria Paharia ,Pahariya,Banjara and Khond depicting their cultures,customs,festivals and traditions</td>
+                <td>2018-19</td>
+                <td>MoTA</td>
+                <td>NA</td>
+                <td class='institution-td'>Third Eye Digital Studio</td>
+                <td>Documentry</td>
+                <td>Draft Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>14</td>
+                <td class='name-td'>Video Documentary on KARMA & SOHRAI Festival</td>
+                <td>2018-19</td>
+                <td>MoTA</td>
+                <td> 7.0</td>
+                <td class='institution-td'>Akhra Trust</td>
+                <td>Documentry</td>
+                <td>Second Progress Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>15</td>
+                <td class='name-td'>Effectiveness of Mid Day Meal Scheme to reduce malnutrition : A comparative study</td>
+                <td>2019-20</td>
+                <td>MoTA</td>
+                <td> 7.5</td>
+                <td class='institution-td'>RIIMS, Ranchi</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>First Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>16</td>
+                <td class='name-td'>Ethnographic Study: Kanwar, Banjara, Bathudi, Binjhia </td>
+                <td>2019-20</td>
+                <td>MoTA</td>
+                <td> 8.4</td>
+                <td class='institution-td'>DSPMU, Ranchi</td>
+                <td>Anthropological Studies</td>
+                <td>First Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>17</td>
+                <td class='name-td'>Ethnographic Study: Kisan, Gond, Kora </td>
+                <td>2019-20</td>
+                <td>MoTA</td>
+                <td> 6.4</td>
+                <td class='institution-td'>IHD, Ranchi</td>
+                <td>Anthropological Studies</td>
+                <td>Final Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>18</td>
+                <td class='name-td'>Ethnographic Study: Kol, Gorait, Khond </td>
+                <td>2019-20</td>
+                <td>MoTA</td>
+                <td> 6.3</td>
+                <td class='institution-td'>Ram Krishna Mission, Ranchi</td>
+                <td>Anthropological Studies</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>19</td>
+                <td class='name-td'>Study of the social institutions among tribals continuity and change (i.e. Akhra, Dhumkuriya etc.)</td>
+                <td>2019-20</td>
+                <td>MoTA</td>
+                <td> 4.5</td>
+                <td class='institution-td'>DSPMU, Ranchi</td>
+                <td>Tribal Art and Culture</td>
+                <td>Final Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>20</td>
+                <td class='name-td'>Study on existing nature of right's of tribal women in Jharkhand with reference to land-socio-economic-religious and property rights</td>
+                <td>2019-20</td>
+                <td>MoTA</td>
+                <td> 4.5</td>
+                <td class='institution-td'>Institute for Community Forest, Ranchi</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>First Progress Reprot Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>21</td>
+                <td class='name-td'>Nutrition and Genetic studies on Sabar tribe of Kolhan region</td>
+                <td>2019-20</td>
+                <td>MoTA</td>
+                <td> 5.5</td>
+                <td class='institution-td'>RIIMS, Ranchi</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>22</td>
+                <td class='name-td'>Study of Millets production and consumption pattern in last 20 years (millets in farm and on plates)</td>
+                <td>2019-20</td>
+                <td>MoTA</td>
+                <td> 5.5</td>
+                <td class='institution-td'>Ramkrishna Mission, Ranchi</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>Final Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>23</td>
+                <td class='name-td'>In search of self and identity and analysing socio-cultural-financial-Psychology status of Tribal women as a second wife of Non tribe men in Jharkhand</td>
+                <td>2019-20</td>
+                <td>MoTA</td>
+                <td> 4.5</td>
+                <td class='institution-td'>IIM, Ranchi</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>Final Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>24</td>
+                <td class='name-td'>Study of tribal women and girls of Jharkhand in Sports- Extending limits to physical expression, establishing identity, expression establishing identity, honour, economic security</td>
+                <td>2019-20</td>
+                <td>MoTA</td>
+                <td> 5.5</td>
+                <td class='institution-td'>PDAG, Ranchi</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>Draft Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>25</td>
+                <td class='name-td'>Audio - Video ,Paper Documentation of tribal songs and dance in birth, marriage, agriculture, festivals , death ceremony and publication of coffee table book</td>
+                <td>2019-20</td>
+                <td>MoTA</td>
+                <td> 4.0</td>
+                <td class='institution-td'>Footprints India</td>
+                <td>Documentry</td>
+                <td>Second Progress Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>26</td>
+                <td class='name-td'>Study on the socio-economic-cultural-religious aspects of Jharkhand Tribal people residing in Andaman and Nicobar with special reference to change in their livelihood pattern & AV documentary</td>
+                <td>2019-20</td>
+                <td>MoTA</td>
+                <td>NA</td>
+                <td class='institution-td'>NA</td>
+                <td>Tribal Art and Culture</td>
+                <td>First Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>27</td>
+                <td class='name-td'>Labour History of Jharkhand to South Pacific, Caribbean, South East Asia & within the country in various sectors.</td>
+                <td>2020-21</td>
+                <td>MoTA</td>
+                <td> 10.0</td>
+                <td class='institution-td'>Centre for Tribal Studies and Research, Ranchi</td>
+                <td>Historical Studies</td>
+                <td>First Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>28</td>
+                <td class='name-td'> A Historical Study of eastern tribal dynasties: Nal, Tung, and Bhanj.</td>
+                <td>2020-21</td>
+                <td>MoTA</td>
+                <td> 4.75</td>
+                <td class='institution-td'>Dinakrushna College, Odisha</td>
+                <td>Historical Studies</td>
+                <td>First Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>29</td>
+                <td class='name-td'> A Study on food security nutrition and climate-resilient agro practices relating to traditional millets & Crops based on various health indicators. (3 Districts-8 TSP Blocks</td>
+                <td>2020-21</td>
+                <td>MoTA</td>
+                <td> 10.0</td>
+                <td class='institution-td'>Rai University, Ranchi</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>30</td>
+                <td class='name-td'> Value Chain analysis of four Minor Forest Products (Tamarind, Sal seed, Lac, Chiraunji)</td>
+                <td>2020-21</td>
+                <td>MoTA</td>
+                <td> 5.0</td>
+                <td class='institution-td'>Indian Social Institute, Delhi</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>31</td>
+                <td class='name-td'> Evaluation study of various development and welfare Schemes among the PVTG's of Jharkhand.</td>
+                <td>2020-21</td>
+                <td>MoTA</td>
+                <td> 4.8</td>
+                <td class='institution-td'>PDAG, Ranchi</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>32</td>
+                <td class='name-td'> An analytical study of tribal students dropouts and transition rates in Rural as well as Urban Schools.</td>
+                <td>2020-21</td>
+                <td>MoTA</td>
+                <td> 4.8</td>
+                <td class='institution-td'>Ramkrishna Mission, Ranchi</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>33</td>
+                <td class='name-td'> Evaluation Study of Pre-Matric Scholarship programs among the schedule tribe.</td>
+                <td>2020-21</td>
+                <td>MoTA</td>
+                <td> 4.8</td>
+                <td class='institution-td'>LEADS, Jharkhand</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>34</td>
+                <td class='name-td'> Benchmark Survey and Developing Tribal Development Index</td>
+                <td>2020-21</td>
+                <td>MoTA</td>
+                <td> 14.8</td>
+                <td class='institution-td'>IIT, Roorkee</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>First Progress Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>35</td>
+                <td class='name-td'> An Ethnographic Study:  Baiga and  Bhumij </td>
+                <td>2020-21</td>
+                <td>MoTA</td>
+                <td> 6.0</td>
+                <td class='institution-td'>PDAG, Ranchi</td>
+                <td>Anthropological Studies</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>36</td>
+                <td class='name-td'> An Ethnographic Study:  Bedia</td>
+                <td>2020-21</td>
+                <td>MoTA</td>
+                <td> 3.0</td>
+                <td class='institution-td'>Vinoba Bhave University, Hazaribagh</td>
+                <td>Anthropological Studies</td>
+                <td>Not Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>37</td>
+                <td class='name-td'> An Ethnographic Study:  Chero and Kharwar </td>
+                <td>2020-21</td>
+                <td>MoTA</td>
+                <td> 6.0</td>
+                <td class='institution-td'>DSPMU, Ranchi</td>
+                <td>Anthropological Studies</td>
+                <td>Not Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>38</td>
+                <td class='name-td'>Audio - Video ,Paper Documentation of tribal songs and dance in birth, marriage, agriculture, festivals , death ceremony and publication of coffee table book</td>
+                <td>2019-20</td>
+                <td>MoTA</td>
+                <td> 4.0</td>
+                <td class='institution-td'>Final Destinations Films</td>
+                <td>Documentry</td>
+                <td>Second Progress Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>39</td>
+                <td class='name-td'>Audio - Video ,Paper Documentation of tribal songs and dance in birth, marriage, agriculture, festivals , death ceremony and publication of coffee table book</td>
+                <td>2019-20</td>
+                <td>MoTA</td>
+                <td> 4.0</td>
+                <td class='institution-td'>Temant Coorporation</td>
+                <td>Documentry</td>
+                <td>Second Progress Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>40</td>
+                <td class='name-td'> A Literary Study, audio & video documentation of festivals, dance and song of Birhor and Korwa, </td>
+                <td>2020-21</td>
+                <td>MoTA</td>
+                <td> 8.0</td>
+                <td class='institution-td'>Indegenous People Media Pvt., Delhi</td>
+                <td>Documentry</td>
+                <td>First Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>41</td>
+                <td class='name-td'> A Literary Study, audio & video documentation of festivals, dance and song of Santhal</td>
+                <td>2020-21</td>
+                <td>MoTA</td>
+                <td> 4.0</td>
+                <td class='institution-td'>Srujan Production, Ranchi</td>
+                <td>Documentry</td>
+                <td>First Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>42</td>
+                <td class='name-td'> A Literary Study, audio & video documentation of festivals, dance and song of  Brijia</td>
+                <td>2020-21</td>
+                <td>MoTA</td>
+                <td> 4.0</td>
+                <td class='institution-td'>Film Space Pvt. Ltd., Ranchi</td>
+                <td>Documentry</td>
+                <td>First Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>43</td>
+                <td class='name-td'>A Literary Study, Audio-video documentation of Traditional and Endangered Musical Instruments of Jharkhand.</td>
+                <td>2020-21</td>
+                <td>MoTA</td>
+                <td>NA</td>
+                <td class='institution-td'>NA</td>
+                <td>Documentry</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>44</td>
+                <td class='name-td'>A Litreary study, Audio-Video documentation of Folklore and Dance of Munda and HO.</td>
+                <td>2020-21</td>
+                <td>MoTA</td>
+                <td>NA</td>
+                <td class='institution-td'>NA</td>
+                <td>Documentry</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>45</td>
+                <td class='name-td'>A Study on the Tribal History of Rajmahal (Sahebganj District) as a gateway of Bengal and other aspects from the ancient period to the British period</td>
+                <td>2020-21</td>
+                <td>MoTA</td>
+                <td>NA</td>
+                <td class='institution-td'>Dr. B.R. Ambedekar College, WB</td>
+                <td>Historical Studies</td>
+                <td>Final Draft Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>46</td>
+                <td class='name-td'>Epidemiological Study on Birhor Tribe of Jharkhand</td>
+                <td>2018-19</td>
+                <td>State</td>
+                <td> 20.0</td>
+                <td class='institution-td'>RIMS Ranchi</td>
+                <td>Anthropological Studies</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>47</td>
+                <td class='name-td'>Prevalence of Agro technique in tribal community and its impact on their economic development</td>
+                <td>2018-19</td>
+                <td>State</td>
+                <td> 4.0</td>
+                <td class='institution-td'>Abhivyakti Foundation, Giridih </td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>48</td>
+                <td class='name-td'>Monographic Study of Artisan Tribes with special focus on livelihood</td>
+                <td>2018-19</td>
+                <td>State</td>
+                <td> 4.2</td>
+                <td class='institution-td'>Vinoba Bhave University, Hazaribagh</td>
+                <td>Anthropological Studies</td>
+                <td>Final Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>49</td>
+                <td class='name-td'>Analysis of SC and ST data on varied parameters based on census in Jharkhand from 1951 to 2011</td>
+                <td>2018-19</td>
+                <td>State</td>
+                <td> 6.0</td>
+                <td class='institution-td'>Ranchi University, Ranchi</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>Final Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>50</td>
+                <td class='name-td'>Mahatma Gandhi and Saheed Jatra Tana Bhagat: Philosophy of Disobedience, Non-Cooperation, Nonviolence, Satyagrah and Dialogue</td>
+                <td>2018-19</td>
+                <td>State</td>
+                <td> 2.5</td>
+                <td class='institution-td'>Vinoba Bhave University, Hazaribagh</td>
+                <td>Historical Studies</td>
+                <td>First Progress Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>51</td>
+                <td class='name-td'>Collection & Collation of Tribal Customary : Usage and Practices</td>
+                <td>2018-19</td>
+                <td>State</td>
+                <td> 4.2</td>
+                <td class='institution-td'>Manthan Yuva Sanshthan,  Ranchi</td>
+                <td>Tribal Art and Culture</td>
+                <td>Final Draft  Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>52</td>
+                <td class='name-td'>Unification of Movement led by Mahatma Gandhi and Saheed Tana Bhagat and Their Effect</td>
+                <td>2018-19</td>
+                <td>State</td>
+                <td> 3.5</td>
+                <td class='institution-td'>Manthan Yuva Sanshthan, Ranchi     </td>
+                <td>Historical Studies</td>
+                <td>Final Draft Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>53</td>
+                <td class='name-td'>Study of History of Singhbhum from Ancient to British Period</td>
+                <td>2019-20</td>
+                <td>State</td>
+                <td> 4.5</td>
+                <td class='institution-td'>Society For Reformation and Advancement of Adivasis </td>
+                <td>Historical Studies</td>
+                <td>Final Draft Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>54</td>
+                <td class='name-td'>Urbanization of Damin-I-Koh (Rajmahal) & Paharia Tribe (from 1540-1837)</td>
+                <td>2019-20</td>
+                <td>State</td>
+                <td> 5.5</td>
+                <td class='institution-td'>Dr. B.R. Ambedkar Satabarshiki Mahavidyalaya , Kolkata</td>
+                <td>Historical Studies</td>
+                <td>Final Draft Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>55</td>
+                <td class='name-td'>Tribal History of Jungle Mahal (1. Jhargram, 2. Bardhwan, 3. Midnapur, 4.Bankura, 5. Panchait, 6. Manbhum, 7. Singhbhum, 8.Dhalbhum etc.) from Ancient to Pre British Period</td>
+                <td>2019-20</td>
+                <td>State</td>
+                <td> 5.5</td>
+                <td class='institution-td'>Dhola Mahavidyalaya, West Bengal</td>
+                <td>Historical Studies</td>
+                <td>Final Draft Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>56</td>
+                <td class='name-td'>Study on the Tribal Dynasties in India special reference of Madhya Pradesh, North East, Jharkhand, Bihar, Maharashtra etc.</td>
+                <td>2019-20</td>
+                <td>State</td>
+                <td> 7.0</td>
+                <td class='institution-td'>NA</td>
+                <td>Historical Studies</td>
+                <td>Final Draft Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>57</td>
+                <td class='name-td'>Socio- psychological study of Schedule Tribe adolescents and Youth (Aged 14-23) in communication, hesitation in Schools/ Colleges, and extra-curricular activities. A comparative study of the rural and urban scheduled tribe children & adolescents.</td>
+                <td>2020-21</td>
+                <td>State</td>
+                <td> 5.57</td>
+                <td class='institution-td'>Central University, Jharkhand</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>58</td>
+                <td class='name-td'>A historical study of tribal chiefdoms of Jharkhand : Kherwar of Ramgarh, Munda of Bundu, Bhumij of Jungle Mahal, Nagwansi of Ranchi, Santhal of Hazaribagh & Others</td>
+                <td>2020-21</td>
+                <td>State</td>
+                <td> 3.2</td>
+                <td class='institution-td'>Indian Social Institute, New Delhi</td>
+                <td>Historical Studies</td>
+                <td>Final Draft Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>59</td>
+                <td class='name-td'>Ecology and Tribal communities : A Philosophical analysis of world view with reference to Mal Pahariya and Sauria Pahariya</td>
+                <td>2020-21</td>
+                <td>State</td>
+                <td> 4.2</td>
+                <td class='institution-td'>RUMBUL, Ranchi</td>
+                <td>Tribal Art, Customs and Culture</td>
+                <td>First Progress Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>60</td>
+                <td class='name-td'>Study on customary rights and practices of five major Scheduled tribe of Jharkhand: A comparative study</td>
+                <td>2020-21</td>
+                <td>State</td>
+                <td> 4.2</td>
+                <td class='institution-td'>Indian Social Institute, New Delhi</td>
+                <td>Tribal Art, Customs and Culture</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>61</td>
+                <td class='name-td'>Birhors : Nomadism, Indigeneity and Cross Cultural Exchanges</td>
+                <td>2020-21</td>
+                <td>State</td>
+                <td> 5.0</td>
+                <td class='institution-td'>Sidho-Kanho Birsa University. Purulia, West Bengal</td>
+                <td>Tribal Art, Customs and Culture</td>
+                <td>Final Draft Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>62</td>
+                <td class='name-td'>Study on Sonet Santhal Samaj and Tundi Ashram movement in Jharkhand</td>
+                <td>2020-21</td>
+                <td>State</td>
+                <td> 3.5</td>
+                <td class='institution-td'>Satyawati College, University of Delhi</td>
+                <td>Historical Studies</td>
+                <td>First Progress Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>63</td>
+                <td class='name-td'>Comparative Studies of the Renaissance movement of Bengal, Maharastra and Awadh with tribal religious-Social Movements in Colonial Period</td>
+                <td>2020-21</td>
+                <td>State</td>
+                <td> 3.5</td>
+                <td class='institution-td'>Sido Kanhu Murmu University, Dumka</td>
+                <td>Historical Studies</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>64</td>
+                <td class='name-td'>Ethnographic Sudies of Castes (Dhivar, Mundari, Marha and Orn) of Jharkhand</td>
+                <td>2020-21</td>
+                <td>State</td>
+                <td> 4.4</td>
+                <td class='institution-td'>Dr.shyama Prasad Mukherjee University, Ranchi</td>
+                <td>Anthropological Studies</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>65</td>
+                <td class='name-td'>Ethnographic Sudies of Castes (Sinduriya, Lohariya) of Jharkhand</td>
+                <td>2020-21</td>
+                <td>State</td>
+                <td> 2.2</td>
+                <td class='institution-td'>Centre for Studies in Social Science, West Bengal</td>
+                <td>Anthropological Studies</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>66</td>
+                <td class='name-td'>Assessment of Standard of Living of Tana Bhagat Community of Jharkhand with Multidimensional Poverty Approach</td>
+                <td>2021-22</td>
+                <td>State</td>
+                <td> 5.4</td>
+                <td class='institution-td'>IHD, Ranchi</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>First Progress Report Received</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>67</td>
+                <td class='name-td'>Assessment of Possibilities of Inclusion of Tribal Languages in the Curriculum of DoSW-run Residential Schools and Learning Aptitude of Students</td>
+                <td>2021-22</td>
+                <td>State</td>
+                <td> 8.1</td>
+                <td class='institution-td'>BIT Mesra, Ranchi</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+            <tr>
+                <td>68</td>
+                <td class='name-td'>Performance and Outreach of Phoolo-Jhano Scheme</td>
+                <td>2021-22</td>
+                <td>State</td>
+                <td> 8.1</td>
+                <td class='institution-td'>DSPMU, Ranchi</td>
+                <td>Socio-economic and Programme Evaluation</td>
+                <td>Initiated</td>
+                <td>NA
+            </tr>
+                                 
         </tbody>
     </table>
     <!-- <script>getUniqueValuesFromColumn()
